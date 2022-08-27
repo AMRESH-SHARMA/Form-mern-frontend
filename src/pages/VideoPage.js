@@ -37,7 +37,7 @@ const VideoPage = () => {
     }
   }
   fetchVideo()
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>
