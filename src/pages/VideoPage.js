@@ -28,7 +28,7 @@ const VideoPage = () => {
       const json = await res.json()
       .then((json)=>{setData(json)})
       .then((json)=>{setLoading(false)})
-
+      console.log(json)
     } catch (err) {
       setError(true)
       setLoading(false)
