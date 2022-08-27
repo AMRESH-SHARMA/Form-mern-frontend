@@ -44,7 +44,7 @@ export default function App() {
       })
       .catch((err) => {if(err) {setSavingPost(false);alert("server error")}})
       .then((res)=>{if(res.ok){navigate("/page2", { replace: false })}})
-
+      console.log(res)
   } else{
     alert("Please Fill All Fields")
   }
