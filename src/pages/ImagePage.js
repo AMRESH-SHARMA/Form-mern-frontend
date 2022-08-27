@@ -13,7 +13,7 @@ const[loading,setLoading]=useState(true)
 
   const fetchImages = async() => {
     try {
-      const res = await fetch("http://localhost:5000/formdata")
+      const res = await fetch("https://form-mern-backend-deployed.herokuapp.com/formdata")
       const json = await res.json()
       .then((json)=>{setData(json)})
       .then((json)=>{setLoading(false)})
