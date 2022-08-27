@@ -24,7 +24,7 @@ const VideoPage = () => {
   useEffect(() => {
   const fetchVideo = async() => {
     try {
-      const res = await fetch(`http://localhost:5000/getvideo/${slug}`)
+      const res = await fetch(`https://form-mern-backend-deployed.herokuapp.com/${slug}`)
       const json = await res.json()
       .then((json)=>{setData(json)})
       .then((json)=>{setLoading(false)})
