@@ -38,7 +38,7 @@ export default function App() {
       formData.append("videoAsset", videoAsset);
       formData.append("title", title);
       formData.append("description", description);
-      const res = await fetch("http://localhost:5000/formdata", {
+      const res = await fetch("https://form-mern-backend-deployed.herokuapp.com/formdata", {
         method: "POST",
         body: formData,
       })
