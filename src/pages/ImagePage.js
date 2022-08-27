@@ -17,7 +17,7 @@ const[loading,setLoading]=useState(true)
       const json = await res.json()
       .then((json)=>{setData(json)})
       .then((json)=>{setLoading(false)})
-      // .then((res)=>{console.log("response",(res))})
+      console.log(json)
     } catch (err) {
 
       setError(true)
