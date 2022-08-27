@@ -29,6 +29,7 @@ const VideoPage = () => {
       .then((json)=>{setData(json)})
       .then((json)=>{setLoading(false)})
       console.log(json)
+      console.log(slug)
     } catch (err) {
       setError(true)
       setLoading(false)
@@ -36,7 +37,7 @@ const VideoPage = () => {
     }
   }
   fetchVideo()
-  }, [slug])
+  }, [])
 
   return (
     <>
